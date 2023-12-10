@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+#wrapper-div {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+/* Nav Section */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+/*Logo section*/
+
+#nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-right: 100px;
+}
+#logo-img {
+  width: 100px;
+  border-radius: 100px;
+  margin-left: 20px;
+}
+
+/*Links Section*/
+
+#nav-linklist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  padding-right: 100px;
+  font-size: 20px;
+}
+.nav-link a {
+  position: relative;
+  color: white;
+}
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease;
+}
+.nav-link a:hover::after {
+  width: 80%;
+}
+
+/* Button */
+#hire-btn {
+  background-color: #1d4ed8;
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  transition: all 0.3 ease;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+#hire-btn:hover {
+  background-color: #0c339f;
+  transition: all 0.3s ease-in-out;
+}
+/*Container section*/
+#container-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+}
+#head-content-div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+#container-header-div {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 25px;
+  font-size: 3rem;
+  color: white;
+}
+#container-content-div {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: large;
+  color: lightgrey;
+}
+#image-div {
+  display: flex;
+  width: 40%;
+  height: 450px;
+}
+#container-image {
+  width: 540px;
+  height: 450px;
+  border-radius: 200px;
+  margin-left: 20px;
+}
+
+/*Features Section */
+
+#features-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+#features-head-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 3rem;
+  color: white;
+  margin-top: 10px;
+}
+.features-content-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  margin-top: 150px;
+}
+.feature {
+  display: flex;
+  width: 100px;
+  height: 50px;
+}
+.fa-brands {
+  font-size: 100px;
+  color: white;
+}
+.feature-head-feature-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+.feature-head {
+  display: flex;
+  font-size: medium;
+  padding-left: 10px;
+  color: white;
+}
+#feature-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 3rem;
+  color: white;
+  margin-top: 10px;
+}
+.feature-head-feature-wrap:nth-child(2) .feature-head {
+  justify-content: center;
+}
+.feature-head-feature-wrap:nth-child(3) .feature-head {
+  padding-left: 0px;
+}
+.feature-head-feature-wrap:nth-child(4) .feature-head {
+  padding-left: 20px;
+}
+
+/* Project Section */
+
+#Projects-div {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#project-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+}
+#project-explain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+  margin-top: 20px;
+  color: gray;
+  font-size: 1rem;
+  margin: auto;
+}
+#projects-wrapper-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  margin-top: 100px;
+}
+.string-div {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 120px;
+  margin-right: 50px;
+  border-right: 2px solid darkgray;
+}
+.project-block-div {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 100px;
+}
+.first-side-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  width: 200px;
+  height: 100px;
+  color: white;
+}
+.second-side-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: white;
+}
+.side-done {
+  padding-top: 10px;
+  color: green;
+}
+.side-wait {
+  padding-top: 10px;
+  color: red;
+}
+.number-block {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+.circular-number-block {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  border: 2px solid lightgray;
+  border-radius: 80px;
+  align-items: center;
+  font-size: 50px;
+  color: gray;
+}
+/*Appear*/
+.project-animation .first-side-block,
+.project-animation .second-side-block {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.project-animation.animate .first-side-block,
+.project-animation.animate .second-side-block {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Contact Section */
+#contact-div {
+  width: 80%;
+  height: 500px;
+  background-color: rgb(3, 3, 78);
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 200px blue;
+}
+#contact-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 3rem;
+  color: white;
+}
+
+#contact-content-cover-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+#contact-content-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact-content-getIntouch-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#contact-content-getIntouch-div input {
+  border: 1px solid black;
+  outline: none;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 400px;
+  min-height: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+#contact-content-getIntouch-div textarea {
+  border: 1px solid black;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 400px;
+  min-height: 100px;
+  margin-bottom: 25px;
+}
+#contact-content-mailicon-div {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: right;
+}
+.contact-content-mailicon-img {
+  width: 500px;
+  height: 398px;
+}
+.contact-form-button {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-left: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  border: 1px solid black;
+  background-color: rgb(6, 6, 133);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.contact-form-button:hover {
+  background-color: white;
+  color: blue;
+}
+/* Add this CSS at the end of your existing styles */
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+  }
+
+  #nav-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+
+  #nav-linklist {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  #hire-btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 90px;
+  }
+  #container-header-div {
+    display: flex;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-size: 2rem;
+    color: white;
+  }
+  #container-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    margin-left: 20px;
+  }
+  #image-div {
+    height: 150px;
+  }
+  #container-content-div {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: large;
+    color: lightgrey;
+  }
+  #features-div {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 400px;
+  }
+  .features-content-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-head-feature-wrap {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .feature {
+    width: 80px;
+    height: 40px;
+  }
+  .fa-brands {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+
+  #feature-end {
+    opacity: 0.3;
+  }
+  #features-head-div {
+    margin-top: 100px;
+    margin-left: 60px;
+  }
+  #project-head {
+    margin-bottom: 100px;
+  }
+  .second-side-block {
+    width: 160px;
+  }
+  .side-head {
+    font-size: small;
+  }
+
+  #contact-head {
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  #contact-div {
+    width: 300px;
+    height: 768px;
+  }
+}
