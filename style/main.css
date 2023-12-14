@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   display: flex;
   background-color: #000;
 }
@@ -136,14 +136,12 @@ nav {
 }
 #container-header-div {
   display: flex;
-  padding-left: 50px;
   padding-top: 25px;
   font-size: 3rem;
   color: white;
 }
 #container-content-div {
   margin-top: 20px;
-  margin-left: 10px;
   font-size: large;
   color: lightgrey;
 }
@@ -165,9 +163,9 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 #features-head-div {
   display: flex;
@@ -185,6 +183,11 @@ nav {
   width: 100%;
   height: 150px;
   margin-top: 150px;
+}
+.blur-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .feature {
   display: flex;
@@ -338,16 +341,16 @@ nav {
 #contact-div {
   width: 80%;
   height: 500px;
-  background-color: rgb(3, 3, 78);
+  /*background-color: rgb(3, 3, 78);*/
   margin: auto;
   border-radius: 30px;
-  box-shadow: 0 0 200px blue;
+  /* box-shadow: 0 0 200px blue; */
 }
 #contact-head {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  text-align: center;
   height: 100px;
+  padding-right: 30px;
   padding-left: 30px;
   padding-top: 30px;
   font-size: 3rem;
@@ -380,7 +383,7 @@ nav {
   width: 400px;
   min-height: 30px;
   margin-bottom: 25px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 #contact-content-getIntouch-div textarea {
   border: 1px solid black;
@@ -391,6 +394,7 @@ nav {
   width: 400px;
   min-height: 100px;
   margin-bottom: 25px;
+  border-radius: 4px;
 }
 #contact-content-mailicon-div {
   display: flex;
@@ -406,7 +410,6 @@ nav {
   width: 200px;
   height: 50px;
   margin-left: 100px;
-  font-family: "Times New Roman", Times, serif;
   font-size: larger;
   border: 1px solid black;
   background-color: rgb(6, 6, 133);
