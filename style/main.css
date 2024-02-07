@@ -83,6 +83,24 @@ nav {
   padding-right: 100px;
   font-size: 20px;
 }
+.hire-me {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+.hire-me:hover {
+  background-color: white;
+  color: black;
+}
 .nav-link a {
   position: relative;
   color: white;
@@ -101,7 +119,7 @@ nav {
   width: 80%;
 }
 
-/* Button */
+/* hire me Button version*/
 #hire-btn {
   background-color: #1d4ed8;
   display: flex;
