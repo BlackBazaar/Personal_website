@@ -109,9 +109,8 @@ nav {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 20px;
-  border: 1px solid black;
+  border: 2px solid white;
   border-radius: 20px;
-  background-color: blue;
   color: white;
   justify-content: center;
   transition: background-color 0.5s ease;
